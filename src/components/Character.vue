@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    props: ["id"],
+    props: ['id'],
     data() {
         return {
             character: {}
@@ -14,7 +14,7 @@ export default {
     },
     methods: {
         fetchCharacter() {
-            fetch(`https://swapi.co/api/people/${id}`, {
+            fetch(`https://swapi.co/api/people/${this.id}`, {
                 method: 'GET'
             })
             .then(response => response.json())

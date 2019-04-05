@@ -2,11 +2,7 @@
     <div id="app">
         <h3>{{title}}</h3>
         <div class="col-md-12">
-            <Character 
-                v-for="(id, index) in initial_ids" 
-                :id="id"
-                key="index"
-                />
+            <Character v-for="(id, index) in initial_ids" :key="index" :id="id" />
         </div>
     </div>
 </template>
@@ -19,7 +15,7 @@ export default {
     data() {
         return {
             title: 'Generate Your Team',
-            initial_ids: [1, 13, 14]
+            initial_ids: [1, 13, 20]
         }
     },
     components: {
