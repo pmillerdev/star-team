@@ -1,8 +1,11 @@
 <template>
     <div id="app">
-        <h3>{{title}}</h3>
-        <div class="col-md-12">
-            <Character v-for="(id, index) in initial_ids" :key="index" :id="id" />
+        <h1>{{title}}</h1>
+        <h3>{{subtitle}}</h3>
+        <div class="container-fluid">
+            <div class="row">
+                <Character v-for="(id, index) in initial_ids" :key="index" :id="id" />
+            </div>
         </div>
     </div>
 </template>
@@ -14,7 +17,8 @@ export default {
     name: 'app',
     data() {
         return {
-            title: 'Generate Your Team',
+            title: 'Star Team',
+            subtitle: 'Generate your dream team of star wars characters!',
             initial_ids: [1, 13, 20]
         }
     },

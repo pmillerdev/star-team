@@ -1,6 +1,14 @@
 <template>
-    <div class="" @click="switchCharacter">
-        {{character}}
+    <div class="col-sm-4" @click="switchCharacter">
+        <div class="character-card" title="Click for a new random character">
+            <div class="card-block">
+                <h4 class="card-title">{{character.name}}</h4>
+                <p class="card-text">Height: {{character.height}} cm</p>
+                <p class="card-text">Mass: {{character.mass}} kg</p>
+                <p class="card-text">Hair Colour: {{character.hair_color}}</p>
+                <p class="card-text">Eye Colour: {{character.eye_color}}</p>
+            </div>
+        </div>
     </div>
 </template>
 
