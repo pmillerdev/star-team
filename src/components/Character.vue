@@ -13,8 +13,8 @@ export default {
         }
     },
     methods: {
-        fetchCharacter() {
-            fetch(`https://swapi.co/api/people/${this.id}`, {
+        fetchCharacter(id) {
+            fetch(`https://swapi.co/api/people/${id}`, {
                 method: 'GET'
             })
             .then(response => response.json())
