@@ -1,28 +1,28 @@
 body {
-    background: #263238;
+  background: #263238;
 }
 
 #app {
-    font-family: 'Avenir', Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #fff;
-    margin-top: 60px;
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #fff;
+  margin-top: 60px;
 }
 
 .link,
 .link:hover,
 .link:visited,
 .link:active {
-    display: inline-block;
-    color: #4FC08D;
-    margin-bottom: 1em;
+  display: inline-block;
+  color: #4fc08d;
+  margin-bottom: 1em;
 }
 
 .item-card {
-    border: 2px solid #4FC08D;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 1em;
+  border: 2px solid #4fc08d;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 1em;
 }
